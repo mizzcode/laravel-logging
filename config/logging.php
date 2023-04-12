@@ -105,7 +105,7 @@ return [
             ],
             'processors' => [PsrLogMessageProcessor::class],
         ],
-
+        // buat channel sendiri untuk buat file log baru dan buat formatter nya JsonFormatter
         'file' => [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
