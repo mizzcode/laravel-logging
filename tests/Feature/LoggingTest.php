@@ -54,7 +54,7 @@ class LoggingTest extends TestCase
 
     public function testFileHandler()
     {
-        $file = Log::channel("file"); // menentukan channel nya yaitu slack
+        $file = Log::channel("file"); // menentukan channel nya yaitu file
         $file->error("Hello File");
         $file->info("Hello File");
         $file->warning("Hello File");
